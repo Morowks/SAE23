@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Portefolio{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel= "stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    </head>
+    <body>
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                 <div class="container-fluid">
+                    <a class="navbar-brand" href="/">BENABIDA Sinwane</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/portefolio">Mon Portfolio</a>
+                        <span class="visually-hidden">(current)</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cv">Mon CV</a>
+                        <span class="visually-hidden">(current)</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loisirs">Loisirs </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hiddenpage">Hidden Page </a>
+                </li> 
+                </div>
+            </nav> 
+         <h1 class="title"> MON PORTFOLIO </h1>
+         &nbsp;
+         &nbsp;
+         <h4 class="titre_excel"> Utiliser les bonnes pratiques et les recommandations de cybersecurite :</h4>
+        <div class="excel">
+            <iframe width=1400 height=220 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTu2QN3Et7O4etb9G40q_e_nIE66tRVvl3BG9s82TJRsGFRToOuR6M5FVBjyVWVXcvcQ8-tV9wt2rVt/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+        &nbsp;
+        &nbsp;
+        <h4 class="titre_excel">Administrer les reseaux et Internet /</h4>
+        <div class="excel">
+            <iframe width=1400 height=220 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTu2QN3Et7O4etb9G40q_e_nIE66tRVvl3BG9s82TJRsGFRToOuR6M5FVBjyVWVXcvcQ8-tV9wt2rVt/pubhtml?gid=1300426478&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+        &nbsp;
+        &nbsp;
+        <h4 class="titre_excel">ConnaItre les differents types d’attaque</h4>
+        <div class="excel">
+            <iframe width=1400 height=220 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTu2QN3Et7O4etb9G40q_e_nIE66tRVvl3BG9s82TJRsGFRToOuR6M5FVBjyVWVXcvcQ8-tV9wt2rVt/pubhtml?gid=108260135&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+
+           
+        
+            <div id="scroll_to_top">
+                <a href="#top"><img src="/img/scrolltop.png" alt="Retourner en haut" /></a>
+            </div>
+        
+            <footer>
+                <p>&nbsp;</p>
+                <center>
+                 SITE COPYRIGHT PAR SINWANE BENABIDA
+                </center>
+            </footer>
+        </body>
+</html>
+

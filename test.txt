@@ -1,0 +1,27 @@
+// Select contient la requête SQL
+$select = "SELECT DISTINCT nom,prenom,voip,apache,pentest,cyber FROM commande";
+
+$resultats = $wpdb->get_results($select);
+
+echo "<center>";
+echo "<table border=1>";
+echo "</center>";
+
+foreach($resultats as $ligne){
+ echo "</td><td>";
+ echo "<p>Prenom:</p>".$ligne->prenom;
+ echo "</td><td>";
+ echo "<p>Nom:</p>".$ligne->nom;
+ echo "</td><td>";
+ echo "<p>Installation FreePBX :</p>".$ligne->voip;
+ echo "</td><td>";
+ echo "<p>Installation apache :</p>".$ligne->apache;
+ echo "</td><td>";
+ echo "<p>Services de Pentesting :</p>".$ligne->pentest;
+ echo "</td><td>";
+ echo "<p>Formation Cyber :</p>".$ligne->cyber;
+ echo "</td><td>";
+ echo "</td></tr>";
+}
+// Fin de la table
+echo "</table>";

@@ -1,0 +1,3 @@
+cd C:\Users\Administrateur\Documents\portfolio-sae14
+symfony composer update 
+symfony server:start --port=8080
